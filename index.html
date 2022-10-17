@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/svg"
+      sizes="17x4.8"
+      href="./assets/shared/logo.svg"
+    />
+
+    <title>Galleria slideshow site</title>
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="primary-header flex container">
+      <a class="primary-header__logo" href="./index.html"
+        ><img src="assets/shared/logo.svg" alt="Logo"
+      /></a>
+      <p>
+        <a
+          active-state="false"
+          id="slide-btn"
+          href="./slide.html"
+          class="txt-btn txt-btn--slideshow fs-300 spacing-2"
+          >Start slideshow</a
+        >
+      </p>
+    </header>
+
+    <main id="homepage-grid" class="main-home container grid">
+      <article class="main__article grid-item" data-index-number="0">
+        <img
+          src="assets/starry-night/thumbnail.jpg"
+          alt="Starry Night"
+          class="grid-item-thumbnail"
+        />
+        <div class="grid-item-overlay text-white bg-overlay flow">
+          <h2 class="fw-700 fs-700">Starry Night</h2>
+          <p class="fs-400">Vincent Van Gogh</p>
+        </div>
+      </article>
+
+      <article class="main__article grid-item" data-index-number="1">
+        <img
+          src="assets/girl-with-pearl-earring/thumbnail.jpg"
+          alt="Girl with a Pearl Earring"
+          class="grid-item-thumbnail"
+        />
+        <div class="grid-item-overlay text-white bg-overlay flow">
+          <h2 class="fw-700 fs-700">Girl with a Pearl Earring</h2>
+          <p class="fs-400">Johannes Vermeer</p>
+        </div>
+      </article>
+
+      <article class="main__article grid-item" data-index-number="2">
+        <img
+          src="assets/guernica/thumbnail.jpg"
+          alt="Guernica"
+          class="grid-item-thumbnail"
+        />
+        <div class="grid-item-overlay text-white bg-overlay flow">
+          <h2 class="fw-700 fs-700">Guernica</h2>
+          <p class="fs-400">Pablo Picasso</p>
+        </div>
+      </article>
+
+      <article class="main__article grid-item" data-index-number="3">
+        <img
+          src="assets/penitent-magdalene/thumbnail.jpg"
+          alt="Penitent Magdalene"
+          class="grid-item-thumbnail"
+        />
+        <div class="grid-item-overlay text-white bg-overlay flow">
+          <h2 class="fw-700 fs-700">Penitent Magdalene</h2>
+          <p class="fs-400">Artemisia Gentileschi</p>
+        </div>
+      </article>
+
+      <article class="main__article grid-item" data-index-number="4">
+        <img
+          src="assets/the-storm-on-the-sea-of-galilee/thumbnail.jpg"
+          alt="The Storm on the Sea of Galilee"
+          class="grid-item-thumbnail"
+        />
+        <div class="grid-item-overlay text-white bg-overlay flow">
+          <h2 class="fw-700 fs-700">The Storm on the Sea of Galilee</h2>
+          <p class="fs-400">Rembrandt</p>
+        </div>
+      </article>
+
+      <article class="main__article grid-item" data-index-number="5">
+        <img
+          src="assets/the-great-wave-off-kanagawa/thumbnail.jpg"
+          alt="The Great Wave off Kanagawa"
+          class="grid-item-thumbnail"
+        />
+        <div class="grid-item-overlay text-white bg-overlay flow">
+          <h2 class="fw-700 fs-700">The Great Wave off Kanagawa</h2>
+          <p class="fs-400">Hokusai</p>
+        </div>
+      </article>
+
+      <article class="main__article grid-item" data-index-number="6">
+        <img
+          src="assets/van-gogh-self-portrait/thumbnail.jpg"
+          alt="Van Gogh Self-portrait "
+          class="grid-item-thumbnail"
+        />
+        <div class="grid-item-overlay text-white bg-overlay flow">
+          <h2 class="fw-700 fs-700">Van Gogh Self-portrait</h2>
+          <p class="fs-400">Vincent Van Gogh</p>
+        </div>
+      </article>
+
+      <article class="main__article grid-item" data-index-number="7">
+        <img
+          src="assets/the-sleeping-gypsy/thumbnail.jpg"
+          alt="The Sleeping Gypsy"
+          class="grid-item-thumbnail"
+        />
+        <div class="grid-item-overlay text-white bg-overlay flow">
+          <h2 class="fw-700 fs-700">The Sleeping Gypsy</h2>
+          <p class="fs-400">Henri Rousseau</p>
+        </div>
+      </article>
+
+      <article class="main__article grid-item" data-index-number="8">
+        <img
+          src="assets/lady-with-an-ermine/thumbnail.jpg"
+          alt="Lady with an Ermine"
+          class="grid-item-thumbnail"
+        />
+        <div class="grid-item-overlay text-white bg-overlay flow">
+          <h2 class="fw-700 fs-700">Lady with an Ermine</h2>
+          <p class="fs-400">Leonardo da Vinci</p>
+        </div>
+      </article>
+
+      <article class="main__article grid-item" data-index-number="9">
+        <img
+          src="assets/the-night-cafe/thumbnail.jpg"
+          alt="The Night Café "
+          class="grid-item-thumbnail"
+        />
+        <div class="grid-item-overlay text-white bg-overlay flow">
+          <h2 class="fw-700 fs-700">The Night Café</h2>
+          <p class="fs-400">Vincent Van Gogh</p>
+        </div>
+      </article>
+
+      <article class="grid-item grid-item--pseudo"></article>
+
+      <article class="main__article grid-item" data-index-number="10">
+        <img
+          src="assets/the-basket-of-apples/thumbnail.jpg"
+          alt="The Basket of Apples"
+          class="grid-item-thumbnail"
+        />
+        <div class="grid-item-overlay text-white bg-overlay flow">
+          <h2 class="fw-700 fs-700">The Basket of Apples</h2>
+          <p class="fs-400">Paul Cézanne</p>
+        </div>
+      </article>
+
+      <article class="main__article grid-item" data-index-number="11">
+        <img
+          src="assets/the-boy-in-the-red-vest/thumbnail.jpg"
+          alt="The Boy in the Red Vest"
+          class="grid-item-thumbnail"
+        />
+        <div class="grid-item-overlay text-white bg-overlay flow">
+          <h2 class="fw-700 fs-700">The Boy in the Red Vest</h2>
+          <p class="fs-400">Edward Hopper</p>
+        </div>
+      </article>
+
+      <article class="main__article grid-item" data-index-number="12">
+        <img
+          src="assets/arnolfini-portrait/thumbnail.jpg"
+          alt="Arnolfini Portrait"
+          class="grid-item-thumbnail"
+        />
+        <div class="grid-item-overlay text-white bg-overlay flow">
+          <h2 class="fw-700 fs-700">Arnolfini Portrait</h2>
+          <p class="fs-400">Jan van Eyck</p>
+        </div>
+      </article>
+
+      <article class="main__article grid-item" data-index-number="13">
+        <img
+          src="assets/mona-lisa/thumbnail.jpg"
+          alt="Mona Lisa"
+          class="grid-item-thumbnail"
+        />
+        <div class="grid-item-overlay text-white bg-overlay flow">
+          <h2 class="fw-700 fs-700">Mona Lisa</h2>
+          <p class="fs-400">Leonardo da Vinci</p>
+        </div>
+      </article>
+
+      <article class="main__article grid-item" data-index-number="14">
+        <img
+          src="assets/the-swing/thumbnail.jpg"
+          alt="The Swing"
+          class="grid-item-thumbnail"
+        />
+        <div class="grid-item-overlay text-white bg-overlay flow">
+          <h2 class="fw-700 fs-700">The Swing</h2>
+          <p class="fs-400">Jean-Honoré Fragonard</p>
+        </div>
+      </article>
+    </main>
+
+    <script src="script.js"></script>
+    <script src="masorny.js"></script>
+    <!-- <script src="slide.js"></script> -->
+
+    <!-- <script src="tab.js"></script> -->
+
+    <!-- for dynamic layout -->
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+  </body>
+</html>

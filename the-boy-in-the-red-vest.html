@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+
+    <title>Galleria slideshow site</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="data.js"></script>
+  </head>
+  <body>
+    <header class="primary-header flex container" data-index-number="11">
+      <div class="primary-header__logo">
+        <a href="./index.html"
+          ><img src="assets/shared/logo.svg" alt="Logo"
+        /></a>
+      </div>
+      <p>
+        <a
+          active-state="true"
+          id="slide-btn"
+          href="#"
+          class="txt-btn txt-btn--slideshow fs-300 spacing-2"
+          >Stop slideshow</a
+        >
+      </p>
+    </header>
+
+    <div class="divider"></div>
+
+    <main class="main__slide container grid grid-container--slide">
+      <section class="main__image-col flex">
+        <picture class="image-area">
+          <source
+            media="(min-width:35em)"
+            srcset="assets/the-boy-in-the-red-vest/hero-large.jpg"
+          />
+          <img
+            src="assets/the-boy-in-the-red-vest/hero-small.jpg"
+            alt="The Boy in the Red Vest"
+          />
+        </picture>
+        <button
+          class="view-btn flex bg-blk text-white uppercase fw-700 fs-200 spacing-1"
+        >
+          <img src="assets/shared/icon-view-image.svg" alt="View Icon" />
+          view image
+        </button>
+
+        <div class="title-area bg-white flow">
+          <h1 id="main-title" class="text-blk fs-800 fw-700">
+            The Boy in the Red Vest
+          </h1>
+          <p id="main-artist" class="text-dg fs-500">Paul Cézanne</p>
+        </div>
+
+        <div class="artist-area">
+          <img
+            id="artist"
+            src="assets/the-boy-in-the-red-vest/artist.jpg"
+            alt="Paul Cézanne"
+          />
+        </div>
+      </section>
+      <section class="main__text-col flow">
+        <p id="year" class="text-lg fs-900 fw-700">1889</p>
+        <p id="description" class="text-dg fw-700">
+          Cézanne painted four oil portraits of this Italian boy in the red
+          vest, all in different poses, which allowed him to study the
+          relationship between the figure and space. The most famous of the
+          four, and the one commonly referred to by this title, is the one which
+          depicts the boy in a melancholic seated pose with his elbow on a table
+          and his head cradled in his hand. It is currently held in Zürich,
+          Switzerland. The other three portraits, of different poses, are in
+          museums in the US
+        </p>
+        <p>
+          <a
+            id="source"
+            target="_blank"
+            href="https://en.wikipedia.org/wiki/The_Boy_in_the_Red_Vest"
+            class="txt-btn fs-100 text-dg spacing-1"
+            >go to source</a
+          >
+        </p>
+      </section>
+    </main>
+
+    <div class="overlay grid container">
+      <p><a id="close-btn" href="#" class="txt-btn fw-700">Close</a></p>
+      <div>
+        <img
+          id="gallary-img"
+          src="assets/the-boy-in-the-red-vest/gallery.jpg"
+          alt="The Boy in the Red Vest Image"
+        />
+      </div>
+    </div>
+
+    <footer class="footer bg-white">
+      <div class="footer__status-bar bg-gray">
+        <div class="footer__status-current bg-blk"></div>
+      </div>
+      <div class="footer__content container flex">
+        <div class="text-content flow">
+          <h3 id="ft-title" class="text-blk fs-600 fw-700">
+            The Boy in the Red Vest
+          </h3>
+          <p id="ft-artist" class="fs-400 text-blk">Paul Cézanne</p>
+        </div>
+        <div class="btn-content">
+          <svg width="26" height="24" xmlns="http://www.w3.org/2000/svg">
+            <g stroke="rgb(229,229,229)" fill="none" fill-rule="evenodd">
+              <path
+                d="M24.166 1.843L3.627 12.113l20.539 10.269V1.843z"
+                stroke-width="2"
+              />
+              <path fill="rgb(229,229,229)" d="M.986.5h-1v22.775h1z" />
+            </g>
+          </svg>
+          <svg width="26" height="24" xmlns="http://www.w3.org/2000/svg">
+            <g stroke="#000" fill="none" fill-rule="evenodd">
+              <path
+                d="M1.528 1.843l20.538 10.27L1.528 22.382V1.843z"
+                stroke-width="2"
+              />
+              <path fill="#D8D8D8" d="M24.708.5h1v22.775h-1z" />
+            </g>
+          </svg>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="slide.js"></script>
+  </body>
+</html>

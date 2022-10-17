@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+
+    <title>Galleria slideshow site</title>
+
+    <link rel="stylesheet" href="styles.css" />
+    <script src="data.js"></script>
+  </head>
+  <body>
+    <header class="primary-header flex container" data-index-number="3">
+      <div class="primary-header__logo">
+        <a href="./index.html"
+          ><img src="assets/shared/logo.svg" alt="Logo"
+        /></a>
+      </div>
+      <p>
+        <a
+          active-state="true"
+          id="slide-btn"
+          href="#"
+          class="txt-btn txt-btn--slideshow fs-300 spacing-2"
+          >Stop slideshow</a
+        >
+      </p>
+    </header>
+
+    <div class="divider"></div>
+
+    <main class="main__slide container grid grid-container--slide">
+      <section class="main__image-col flex">
+        <picture class="image-area">
+          <source
+            media="(min-width:35em)"
+            srcset="assets/penitent-magdalene/hero-large.jpg"
+          />
+          <img
+            src="assets/penitent-magdalene/hero-small.jpg"
+            alt="Penitent Magdalene"
+          />
+        </picture>
+        <button
+          class="view-btn flex bg-blk text-white uppercase fw-700 fs-200 spacing-1"
+        >
+          <img src="assets/shared/icon-view-image.svg" alt="View Icon" />
+          view image
+        </button>
+
+        <div class="title-area bg-white flow">
+          <h1 id="main-title" class="text-blk fs-800 fw-700">
+            Penitent Magdalene
+          </h1>
+          <p id="main-artist" class="text-dg fs-500">Artemisia Gentileschi</p>
+        </div>
+
+        <div class="artist-area">
+          <img
+            id="artist"
+            src="assets/penitent-magdalene/artist.jpg"
+            alt="Vincent Van Gogh"
+          />
+        </div>
+      </section>
+      <section class="main__text-col flow">
+        <p id="year" class="text-lg fs-900 fw-700">1625</p>
+        <p id="description" class="text-dg fw-700">
+          Penitent Magdalene is a painting by the Italian artist Artemisia
+          Gentileschi. It hangs in Seville Cathedral. It has probably been in
+          the cathedral since the late 17th century. The painting's first home
+          was the collection of Fernando Enriquez Afan de Ribera, from 1626 to
+          1637. She returned to the subject later in the 1620s in Mary Magdalene
+          as Melancholy.
+        </p>
+        <p>
+          <a
+            id="source"
+            target="_blank"
+            href="https://en.wikipedia.org/wiki/Penitent_Magdalene_(Artemisia_Gentileschi)"
+            class="txt-btn fs-100 text-dg spacing-1"
+            >go to source</a
+          >
+        </p>
+      </section>
+    </main>
+
+    <div class="overlay grid container">
+      <p><a id="close-btn" href="#" class="txt-btn fw-700">Close</a></p>
+      <div>
+        <img
+          id="gallary-img"
+          src="assets/penitent-magdalene/gallery.jpg"
+          alt="Penitent Magdalene Image"
+        />
+      </div>
+    </div>
+
+    <footer class="footer bg-white">
+      <div class="footer__status-bar bg-gray">
+        <div class="footer__status-current bg-blk"></div>
+      </div>
+      <div class="footer__content container flex">
+        <div class="text-content flow">
+          <h3 id="ft-title" class="text-blk fs-600 fw-700">
+            Penitent Magdalene
+          </h3>
+          <p id="ft-artist" class="fs-400 text-blk">Artemisia Gentileschi</p>
+        </div>
+        <div class="btn-content">
+          <svg width="26" height="24" xmlns="http://www.w3.org/2000/svg">
+            <g stroke="rgb(229,229,229)" fill="none" fill-rule="evenodd">
+              <path
+                d="M24.166 1.843L3.627 12.113l20.539 10.269V1.843z"
+                stroke-width="2"
+              />
+              <path fill="rgb(229,229,229)" d="M.986.5h-1v22.775h1z" />
+            </g>
+          </svg>
+          <svg width="26" height="24" xmlns="http://www.w3.org/2000/svg">
+            <g stroke="#000" fill="none" fill-rule="evenodd">
+              <path
+                d="M1.528 1.843l20.538 10.27L1.528 22.382V1.843z"
+                stroke-width="2"
+              />
+              <path fill="#D8D8D8" d="M24.708.5h1v22.775h-1z" />
+            </g>
+          </svg>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="slide.js"></script>
+  </body>
+</html>
