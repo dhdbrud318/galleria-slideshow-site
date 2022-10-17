@@ -292,6 +292,8 @@ select {
 
 @media (min-width: 35em) {
   .primary-header::after {
+    right: 0;
+    left: 0;
   }
 }
 
