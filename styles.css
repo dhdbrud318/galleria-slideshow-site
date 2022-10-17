@@ -601,6 +601,13 @@ select {
   --flow-space: 0.5rem;
 }
 
+.text-content > h3 {
+  width: 16ch;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
 .btn-content {
   position: relative;
 }
